@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imc"
+    tools:context=".Ejercicio1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Ejercicio 1: Calcular el Índice de Masa Corporal (IMC)."
+        android:textSize="20sp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/volverMain"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="sans-serif-condensed"
+        android:text="volver a Menú principal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pesoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Peso (kg)."
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/pesoEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/pesoText"
+        tools:layout_editor_absoluteX="87dp" />
+
+    <TextView
+        android:id="@+id/alturaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Altura (cm)."
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/pesoEdit"
+        tools:layout_editor_absoluteX="156dp" />
+
+    <EditText
+        android:id="@+id/alturaEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/alturaText"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <Button
+        android:id="@+id/calcularIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="sans-serif-medium"
+        android:text="Calcular IMC"
+        android:textSize="24sp"
+        app:icon="@android:drawable/stat_notify_sync"
+        app:layout_constraintTop_toBottomOf="@+id/alturaEdit"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <TextView
+        android:id="@+id/resultadoIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Clasificación."
+        android:textSize="34sp"
+        app:layout_constraintTop_toBottomOf="@+id/calcularIMC"
+        tools:layout_editor_absoluteX="185dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
